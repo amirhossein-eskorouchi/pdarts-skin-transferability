@@ -1,0 +1,11 @@
+name: pdarts-skin-maintained
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -e .
+      - -r requirements-dev.txt

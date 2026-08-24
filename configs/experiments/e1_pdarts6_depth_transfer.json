@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E1",
+  "experiment_family": "search_and_evaluation_depth_transfer",
+  "method": "P-DARTS6",
+  "result_namespace": "reproduction",
+  "source_dataset": "isic_2019",
+  "target_datasets": [
+    "isic_2019",
+    "pad_ufes_20"
+  ],
+  "resolution": 32,
+  "search": {
+    "progressive_stage_depths": [2, 4, 6],
+    "epochs_per_stage": 25,
+    "total_search_epochs": 75,
+    "batch_size": 64,
+    "learning_rate": 0.025,
+    "learning_rate_min": 0.0,
+    "momentum": 0.9,
+    "weight_decay": 0.0003,
+    "architecture_learning_rate": 0.0006,
+    "architecture_weight_decay": 0.001,
+    "train_portion": 0.5,
+    "grad_clip": 5.0
+  },
+  "evaluation": {
+    "depths": [2, 4, 6, 8, 10, 12, 14],
+    "epochs": 300,
+    "initialization": "new_weights_on_target",
+    "architecture_transfer_only": true
+  },
+  "seeds": [0, 1, 2],
+  "split_mode": "historical_image_level",
+  "upstream_core_policy": "external_authorized_dependency_required",
+  "provenance_notes": [
+    "Archive run ledgers record 25 epochs per stage and 75 total search epochs.",
+    "A manuscript sentence reporting 75 epochs per stage remains unresolved.",
+    "Publication results and reproduction outputs must remain separated."
+  ],
+  "status": "specified_not_executed"
+}

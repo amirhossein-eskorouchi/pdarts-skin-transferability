@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E4",
+  "experiment_family": "multi_target_architecture_transfer",
+  "method": "P-DARTS6",
+  "result_namespace": "reproduction",
+  "source_dataset": "isic_2019",
+  "target_datasets": [
+    "pad_ufes_20",
+    "dermamnist"
+  ],
+  "resolution": 32,
+  "architecture_source": {
+    "search_dataset": "isic_2019",
+    "search_depth": 6,
+    "weights_transferred": false,
+    "architecture_transferred": true
+  },
+  "evaluation": {
+    "depths": [2, 4, 6, 8, 10, 12, 14],
+    "epochs": 300,
+    "initialization": "new_weights_on_target",
+    "batch_size": 64,
+    "learning_rate": 0.025,
+    "momentum": 0.9,
+    "weight_decay": 0.0003,
+    "grad_clip": 5.0
+  },
+  "seeds": [0, 1, 2],
+  "split_mode": "historical_image_level",
+  "upstream_core_policy": "external_authorized_dependency_required",
+  "publication_record_reference": [
+    "HR-001",
+    "HR-002",
+    "HR-007"
+  ],
+  "status": "specified_not_executed"
+}
