@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible problem in the maintained package or validators
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach datasets, patient identifiers, credentials, checkpoints, or private manifests.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Describe the observed behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest safe example using fictional data.
+    validations:
+      required: true
+
+  - type: input
+    id: revision
+    attributes:
+      label: Repository commit
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+    validations:
+      required: true
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation output
+      description: List the checks or tests you ran.

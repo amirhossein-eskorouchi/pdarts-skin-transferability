@@ -51,5 +51,8 @@ jobs:
       - name: Verify generated publication tables
         run: python scripts/build_publication_tables.py --check
 
+      - name: Audit repository release boundary
+        run: python scripts/audit_repository.py
+
       - name: Run standard-library tests
         run: python -m unittest discover -s tests -v

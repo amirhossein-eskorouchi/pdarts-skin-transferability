@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the repository and the relevant scientific publication."
+title: "P-DARTS Skin Transferability"
+type: software
+version: 0.1.0
+authors:
+  - name: "PDARTS Skin Transferability Contributors"
+repository-code: "https://github.com/ae1028/pdarts-skin-transferability"
+license: MIT
+keywords:
+  - neural architecture search
+  - P-DARTS
+  - architecture transferability
+  - skin lesion diagnosis
+  - reproducibility
+references:
+  - type: conference-paper
+    title: "Progressive Differentiable Architecture Search: Bridging the Depth Gap between Search and Evaluation"
+    authors:
+      - family-names: Chen
+        given-names: Xin
+      - family-names: Xie
+        given-names: Lingxi
+      - family-names: Wu
+        given-names: Jun
+      - family-names: Tian
+        given-names: Qi
+    year: 2019
+    conference:
+      name: "IEEE/CVF International Conference on Computer Vision"
