@@ -1,0 +1,19 @@
+﻿{
+    "schema_version":  1,
+    "source_archive_name":  "PDARTS(1).zip",
+    "source_archive_sha256":  "f8b8e924d7e8cd98a5618831c634a656b6062629b54563e21e67df1b06bf3ae0",
+    "audit_method":  "ZIP entries read and hashed without extraction",
+    "total_source_candidates":  27,
+    "python_source_candidates":  25,
+    "nested_source_archives":  2,
+    "candidates_with_windows_paths":  4,
+    "candidates_with_unix_paths":  10,
+    "candidates_with_credential_indicators":  0,
+    "candidates_with_cli":  18,
+    "release_review_required":  21,
+    "duplicate_candidate_path_groups":  0,
+    "duplicate_candidate_hash_groups":  0,
+    "current_final_disposition":  "REVIEW_REQUIRED",
+    "source_files_extracted":  false,
+    "original_archive_modified":  false
+}
