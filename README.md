@@ -1,4 +1,82 @@
+<!-- PUBLICATION-LAYER-BEGIN -->
+
 # P-DARTS Skin Transferability
+
+Architecture transferability with Progressive Differentiable Architecture Search for skin lesion diagnosis.
+
+[![Python 3.10-3.12](https://img.shields.io/badge/python-3.10--3.12-blue.svg)](https://www.python.org/)
+[![DOI](https://img.shields.io/badge/DOI-10.1080%2F24725579.2026.2622416-blue.svg)](https://doi.org/10.1080/24725579.2026.2622416)
+[![CI](https://github.com/amirhossein-eskorouchi/pdarts-skin-transferability/actions/workflows/ci.yml/badge.svg)](https://github.com/amirhossein-eskorouchi/pdarts-skin-transferability/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This repository reconstructs, documents, and tests the computational workflow associated with the following peer-reviewed study:
+
+> A. Vo, L. He, A. Eskorouchi, and H. Wang, “Understanding knowledge transferability in differentiable architecture search for skin lesion diagnosis,” *IISE Transactions on Healthcare Systems Engineering*, vol. 16, no. 1, pp. 71–90, 2026. https://doi.org/10.1080/24725579.2026.2622416
+
+The project investigates whether architectures discovered through Progressive Differentiable Architecture Search can transfer effectively across ISIC-2019, PAD-UFES-20, and DermaMNIST skin-lesion classification settings.
+
+> **Research-use notice:** This repository is research software. It is not intended for clinical diagnosis, treatment decisions, patient care, or deployment as a medical device.
+
+## Publication
+
+**Anh Vo, Lu He, Amirhossein Eskorouchi, and Haifeng Wang**
+
+**Understanding knowledge transferability in differentiable architecture search for skin lesion diagnosis**
+
+*IISE Transactions on Healthcare Systems Engineering*, Volume 16, Issue 1, pages 71–90, 2026.
+
+- [DOI: 10.1080/24725579.2026.2622416](https://doi.org/10.1080/24725579.2026.2622416)
+- [Full article on Taylor & Francis](https://www.tandfonline.com/doi/full/10.1080/24725579.2026.2622416)
+- [Abstract and publication details](https://www.tandfonline.com/doi/abs/10.1080/24725579.2026.2622416)
+- [Citation instructions](docs/CITATION.md)
+- [Citation File Format](CITATION.cff)
+- [BibTeX citation](CITATION.bib)
+
+The article PDF is not redistributed in this repository. Use the DOI or publisher links to access the authorized publication.
+
+## Citation
+
+If you use this repository, its scientific records, or the associated methodology, please cite the publication above.
+
+Machine-readable citation metadata is available in:
+
+- [CITATION.cff](CITATION.cff)
+- [CITATION.bib](CITATION.bib)
+- [docs/CITATION.md](docs/CITATION.md)
+
+## Documentation
+
+| Topic | Document |
+|---|---|
+| Scientific specification | [docs/specification/README.md](docs/specification/README.md) |
+| Scientific scope | [docs/specification/scientific-scope.md](docs/specification/scientific-scope.md) |
+| Data and labels | [docs/specification/data-and-labels.md](docs/specification/data-and-labels.md) |
+| Experiment design | [docs/specification/experiment-design.md](docs/specification/experiment-design.md) |
+| Data boundary | [docs/data/README.md](docs/data/README.md) |
+| Dataset contracts | [docs/data/dataset-contracts.md](docs/data/dataset-contracts.md) |
+| Split protocols | [docs/data/split-protocols.md](docs/data/split-protocols.md) |
+| Source lineage | [docs/lineage/README.md](docs/lineage/README.md) |
+| Upstream attribution | [docs/lineage/upstream-attribution.md](docs/lineage/upstream-attribution.md) |
+| Reproducibility | [docs/reproducibility/README.md](docs/reproducibility/README.md) |
+| Environment | [docs/reproducibility/environment.md](docs/reproducibility/environment.md) |
+| Publication results | [docs/results/README.md](docs/results/README.md) |
+| Result interpretation | [docs/results/interpretation.md](docs/results/interpretation.md) |
+| Maintained software | [docs/software/README.md](docs/software/README.md) |
+| Repository map | [docs/repository-map.md](docs/repository-map.md) |
+| Limitations | [docs/limitations.md](docs/limitations.md) |
+| Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Security | [SECURITY.md](SECURITY.md) |
+| Changelog | [CHANGELOG.md](CHANGELOG.md) |
+
+## License
+
+Independently authored repository content is available under the [MIT License](LICENSE).
+
+Historical snapshots and references to third-party P-DARTS material retain their original provenance and licensing boundaries. Review [upstream attribution](docs/lineage/upstream-attribution.md) before reusing historical or upstream-derived material.
+
+<!-- PUBLICATION-LAYER-END -->
+
+## Repository details
 
 A provenance-first repository for studying architecture transferability with
 Progressive Differentiable Architecture Search in skin-lesion diagnosis.

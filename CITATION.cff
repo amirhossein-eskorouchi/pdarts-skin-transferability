@@ -1,30 +1,44 @@
-cff-version: 1.2.0
-message: "If you use this repository, please cite the repository and the relevant scientific publication."
+﻿cff-version: 1.2.0
+message: "If you use this repository, its scientific records, or its associated methodology, please cite the preferred article below."
 title: "P-DARTS Skin Transferability"
 type: software
-version: 0.1.0
+abstract: "A documented and tested research repository for studying architecture transferability with Progressive Differentiable Architecture Search in skin lesion diagnosis."
 authors:
-  - name: "PDARTS Skin Transferability Contributors"
-repository-code: "https://github.com/ae1028/pdarts-skin-transferability"
-license: MIT
+  - family-names: "Vo"
+    given-names: "Anh"
+  - family-names: "He"
+    given-names: "Lu"
+  - family-names: "Eskorouchi"
+    given-names: "Amirhossein"
+  - family-names: "Wang"
+    given-names: "Haifeng"
+repository-code: "https://github.com/amirhossein-eskorouchi/pdarts-skin-transferability"
+url: "https://github.com/amirhossein-eskorouchi/pdarts-skin-transferability"
+license: "MIT"
 keywords:
-  - neural architecture search
-  - P-DARTS
-  - architecture transferability
-  - skin lesion diagnosis
-  - reproducibility
-references:
-  - type: conference-paper
-    title: "Progressive Differentiable Architecture Search: Bridging the Depth Gap between Search and Evaluation"
-    authors:
-      - family-names: Chen
-        given-names: Xin
-      - family-names: Xie
-        given-names: Lingxi
-      - family-names: Wu
-        given-names: Jun
-      - family-names: Tian
-        given-names: Qi
-    year: 2019
-    conference:
-      name: "IEEE/CVF International Conference on Computer Vision"
+  - "differentiable architecture search"
+  - "P-DARTS"
+  - "architecture transferability"
+  - "skin lesion diagnosis"
+  - "medical imaging"
+  - "neural architecture search"
+preferred-citation:
+  type: article
+  title: "Understanding knowledge transferability in differentiable architecture search for skin lesion diagnosis"
+  authors:
+    - family-names: "Vo"
+      given-names: "Anh"
+    - family-names: "He"
+      given-names: "Lu"
+    - family-names: "Eskorouchi"
+      given-names: "Amirhossein"
+    - family-names: "Wang"
+      given-names: "Haifeng"
+  journal: "IISE Transactions on Healthcare Systems Engineering"
+  year: 2026
+  volume: 16
+  issue: 1
+  start: 71
+  end: 90
+  doi: "10.1080/24725579.2026.2622416"
+  url: "https://doi.org/10.1080/24725579.2026.2622416"
