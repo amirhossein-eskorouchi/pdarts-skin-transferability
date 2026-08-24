@@ -1,0 +1,145 @@
+# ============================================================
+# P-DARTS Skin Transferability
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+*.whl
+build/
+dist/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# ------------------------------------------------------------
+# Virtual environments
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+
+# ------------------------------------------------------------
+# IDE and editor files
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+
+# ------------------------------------------------------------
+# Operating-system files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ------------------------------------------------------------
+# Local configuration and credentials
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+*.key
+*.pem
+
+
+# ------------------------------------------------------------
+# Raw and prepared datasets
+# ------------------------------------------------------------
+/data/
+/dataset/
+/datasets/
+/raw_data/
+/prepared_data/
+
+*.dcm
+*.nii
+*.nii.gz
+
+
+# ------------------------------------------------------------
+# Historical source archives
+#
+# Original archives must remain outside the public repository.
+# ------------------------------------------------------------
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+
+# ------------------------------------------------------------
+# Model checkpoints and numerical intermediates
+# ------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.hdf5
+*.keras
+
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+
+# ------------------------------------------------------------
+# Generated experiment outputs
+# ------------------------------------------------------------
+/output/
+/outputs/
+/runs/
+/checkpoints/
+/logs/
+
+*.log
+
+
+# ------------------------------------------------------------
+# Generated predictions and figures
+# ------------------------------------------------------------
+/predictions/
+/generated_figures/
+
+
+# ------------------------------------------------------------
+# Manuscripts, review files, theses, and presentations
+#
+# Public repository documentation should link to authorized
+# publication records rather than storing working PDFs.
+# ------------------------------------------------------------
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+
+
+# ------------------------------------------------------------
+# Temporary files
+# ------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~

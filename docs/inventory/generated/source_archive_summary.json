@@ -1,0 +1,42 @@
+﻿{
+    "generated_at_utc":  "2026-08-24T20:20:02.8173651Z",
+    "archive_name":  "PDARTS(1).zip",
+    "archive_location_policy":  "Original archive retained outside Git repository",
+    "archive_size_bytes":  367908528,
+    "archive_sha256":  "f8b8e924d7e8cd98a5618831c634a656b6062629b54563e21e67df1b06bf3ae0",
+    "archive_integrity":  "PASS",
+    "file_count":  774,
+    "directory_count":  71,
+    "total_uncompressed_bytes":  440209615,
+    "review_required_count":  746,
+    "extension_counts":  {
+                             ".csv":  88,
+                             ".json":  218,
+                             ".log":  39,
+                             ".npy":  276,
+                             ".pdf":  4,
+                             ".png":  3,
+                             ".pt":  82,
+                             ".py":  25,
+                             ".pyc":  7,
+                             ".txt":  30,
+                             ".zip":  2
+                         },
+    "top_level_counts":  {
+                             "class_counts.csv":  1,
+                             "Github":  34,
+                             "ISIC_2019_Training_GroundTruth.csv":  1,
+                             "ISIC_2019_Training_Metadata.csv":  1,
+                             "label_map.csv":  1,
+                             "metadata.csv":  1,
+                             "output":  727,
+                             "Pdart base paper.pdf":  1,
+                             "screen.png":  1,
+                             "split to classes.py":  1,
+                             "split.png":  1,
+                             "split_report_imgs_part_1.csv":  1,
+                             "Thesis.pdf":  1,
+                             "Thesis_Defense.pdf":  1,
+                             "Understanding Knowledge Transferability in Differentiable Architecture Search for Skin Lesion Diagnosis.pdf":  1
+                         }
+}
