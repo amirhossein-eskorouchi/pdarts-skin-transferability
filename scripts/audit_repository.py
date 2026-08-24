@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -66,10 +67,31 @@ def fail(message: str) -> None:
 
 
 def repository_files() -> list[Path]:
+    """Return only files tracked by Git.
+
+    Runtime validation may create untracked bytecode, cache, coverage, or build
+    artifacts. Those files are protected by .gitignore but are not part of the
+    repository release boundary and must not cause a tracked-content audit to
+    fail.
+    """
+
+    completed = subprocess.run(
+        ["git", "ls-files", "-z"],
+        cwd=ROOT,
+        check=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+
+    relative_paths = [
+        value
+        for value in completed.stdout.decode("utf-8").split("\0")
+        if value
+    ]
+
     return [
-        path
-        for path in ROOT.rglob("*")
-        if path.is_file() and ".git" not in path.parts
+        ROOT / relative_path
+        for relative_path in relative_paths
     ]
 
 
