@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/pdarts-skin-transferability/dataset-config.schema.json",
+  "title": "P-DARTS skin dataset configuration",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "display_name",
+    "data_in_repository",
+    "label_schema",
+    "partition_records",
+    "supported_split_modes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "dataset_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data_in_repository": {
+      "const": false
+    },
+    "label_schema": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["label_id", "code", "name"],
+        "properties": {
+          "label_id": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "partition_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "record_type",
+          "train",
+          "validation",
+          "test",
+          "total"
+        ],
+        "properties": {
+          "record_type": {
+            "enum": [
+              "publication_record",
+              "available_archive_manifest"
+            ]
+          },
+          "train": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "validation": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "test": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "total": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "supported_split_modes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "historical_image_level",
+          "patient_grouped",
+          "official_partition"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": true
+}

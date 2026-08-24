@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "dataset_id": "pad_ufes_20",
+  "display_name": "PAD-UFES-20",
+  "data_in_repository": false,
+  "access": {
+    "type": "public_external",
+    "user_supplied_root_required": true
+  },
+  "label_schema": [
+    {"label_id": 0, "code": "MEL", "name": "melanoma"},
+    {"label_id": 1, "code": "NV", "name": "melanocytic_nevus"},
+    {"label_id": 2, "code": "BCC", "name": "basal_cell_carcinoma"},
+    {"label_id": 3, "code": "AK", "name": "actinic_keratosis"},
+    {"label_id": 4, "code": "BKL", "name": "benign_keratosis"},
+    {"label_id": 5, "code": "SCC", "name": "squamous_cell_carcinoma"}
+  ],
+  "partition_records": [
+    {
+      "record_type": "publication_record",
+      "train": 1286,
+      "validation": 552,
+      "test": 460,
+      "total": 2298
+    },
+    {
+      "record_type": "available_archive_manifest",
+      "train": 1287,
+      "validation": 552,
+      "test": 459,
+      "total": 2298
+    }
+  ],
+  "supported_split_modes": [
+    "historical_image_level",
+    "patient_grouped"
+  ],
+  "patient_group_required": true,
+  "patient_group_field": "patient_id",
+  "historical_overlap_warning": true,
+  "class_5_semantics": "SCC"
+}

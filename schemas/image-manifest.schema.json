@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/pdarts-skin-transferability/image-manifest.schema.json",
+  "title": "Image manifest record",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "image_path",
+    "label_id",
+    "patient_id",
+    "dataset_id",
+    "split",
+    "split_mode"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image_path": {
+      "type": "string",
+      "minLength": 1,
+      "not": {
+        "pattern": "^(?:[A-Za-z]:[\\\\/]|/)"
+      }
+    },
+    "label_id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "patient_id": {
+      "type": "string"
+    },
+    "dataset_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "split": {
+      "enum": ["train", "validation", "test"]
+    },
+    "split_mode": {
+      "enum": [
+        "historical_image_level",
+        "patient_grouped",
+        "official_partition"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

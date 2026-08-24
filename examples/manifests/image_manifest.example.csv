@@ -1,0 +1,4 @@
+sample_id,image_path,label_id,patient_id,dataset_id,split,split_mode
+example_pad_001,images/example_pad_001.jpg,0,example_patient_001,pad_ufes_20,train,patient_grouped
+example_pad_002,images/example_pad_002.jpg,2,example_patient_002,pad_ufes_20,validation,patient_grouped
+example_pad_003,images/example_pad_003.jpg,5,example_patient_003,pad_ufes_20,test,patient_grouped

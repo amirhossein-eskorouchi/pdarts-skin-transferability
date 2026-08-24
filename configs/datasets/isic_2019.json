@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "dataset_id": "isic_2019",
+  "display_name": "ISIC 2019",
+  "data_in_repository": false,
+  "access": {
+    "type": "public_external",
+    "user_supplied_root_required": true
+  },
+  "label_schema": [
+    {"label_id": 0, "code": "MEL", "name": "melanoma"},
+    {"label_id": 1, "code": "NV", "name": "melanocytic_nevus"},
+    {"label_id": 2, "code": "BCC", "name": "basal_cell_carcinoma"},
+    {"label_id": 3, "code": "AK", "name": "actinic_keratosis"},
+    {"label_id": 4, "code": "BKL", "name": "benign_keratosis"},
+    {"label_id": 5, "code": "SCC", "name": "squamous_cell_carcinoma"}
+  ],
+  "partition_records": [
+    {
+      "record_type": "publication_record",
+      "train": 13909,
+      "validation": 5962,
+      "test": 4968,
+      "total": 24839
+    },
+    {
+      "record_type": "available_archive_manifest",
+      "train": 13910,
+      "validation": 5961,
+      "test": 4968,
+      "total": 24839
+    }
+  ],
+  "supported_split_modes": [
+    "historical_image_level"
+  ],
+  "patient_group_required": false,
+  "class_5_semantics": "SCC"
+}

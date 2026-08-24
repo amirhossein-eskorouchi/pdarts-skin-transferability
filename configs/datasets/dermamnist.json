@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "dataset_id": "dermamnist",
+  "display_name": "DermaMNIST aligned six-class task",
+  "data_in_repository": false,
+  "access": {
+    "type": "public_external",
+    "user_supplied_root_required": true
+  },
+  "label_schema": [
+    {"label_id": 0, "code": "MEL", "name": "melanoma"},
+    {"label_id": 1, "code": "NV", "name": "melanocytic_nevus"},
+    {"label_id": 2, "code": "BCC", "name": "basal_cell_carcinoma"},
+    {"label_id": 3, "code": "AK", "name": "actinic_keratosis"},
+    {"label_id": 4, "code": "BKL", "name": "benign_keratosis"},
+    {"label_id": 5, "code": "VASC", "name": "vascular_lesion"}
+  ],
+  "partition_records": [
+    {
+      "record_type": "available_archive_manifest",
+      "train": 2723,
+      "validation": 1167,
+      "test": 1980,
+      "total": 5870
+    }
+  ],
+  "supported_split_modes": [
+    "official_partition"
+  ],
+  "patient_group_required": false,
+  "class_5_semantics": "VASC"
+}
