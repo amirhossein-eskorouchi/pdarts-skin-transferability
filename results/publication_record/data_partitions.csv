@@ -1,0 +1,16 @@
+record_type,dataset,partition,count,total,split_mode,source_record,provenance_status,notes
+publication_record,ISIC-2019,train,13909,24839,historical_image_stratified,final manuscript,publication_reported,Manuscript-reported count
+publication_record,ISIC-2019,validation,5962,24839,historical_image_stratified,final manuscript,publication_reported,Manuscript-reported count
+publication_record,ISIC-2019,test,4968,24839,historical_image_stratified,final manuscript,publication_reported,Manuscript-reported count
+available_archive_manifest,ISIC-2019,train,13910,24839,historical_image_stratified,S1_train.csv,available_not_canonical,One more training image than publication record
+available_archive_manifest,ISIC-2019,validation,5961,24839,historical_image_stratified,S2_val.csv,available_not_canonical,One fewer validation image than publication record
+available_archive_manifest,ISIC-2019,test,4968,24839,historical_image_stratified,S3_test.csv,available_not_canonical,Matches publication-reported test count
+publication_record,PAD-UFES-20,train,1286,2298,historical_image_stratified,final manuscript,publication_reported,Manuscript-reported count
+publication_record,PAD-UFES-20,validation,552,2298,historical_image_stratified,final manuscript,publication_reported,Manuscript-reported count
+publication_record,PAD-UFES-20,test,460,2298,historical_image_stratified,final manuscript,publication_reported,Manuscript-reported count
+available_archive_manifest,PAD-UFES-20,train,1287,2298,historical_image_stratified,T1_train.csv,available_not_canonical,Patient identifiers overlap with other partitions
+available_archive_manifest,PAD-UFES-20,validation,552,2298,historical_image_stratified,T2_val.csv,available_not_canonical,Patient identifiers overlap with other partitions
+available_archive_manifest,PAD-UFES-20,test,459,2298,historical_image_stratified,T3_test.csv,available_not_canonical,Patient identifiers overlap with other partitions
+available_archive_manifest,DermaMNIST,train,2723,5870,archive_prepared_split,D1_train.csv,available_not_canonical,Prepared six-class archive subset
+available_archive_manifest,DermaMNIST,validation,1167,5870,archive_prepared_split,D2_val.csv,available_not_canonical,Prepared six-class archive subset
+available_archive_manifest,DermaMNIST,test,1980,5870,archive_prepared_split,D3_test.csv,available_not_canonical,Prepared six-class archive subset

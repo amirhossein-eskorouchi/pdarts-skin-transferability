@@ -1,0 +1,13 @@
+schema_id,class_id,canonical_label,source_label,description,status
+isic_pad_six_class,0,AK,AK,Actinic keratosis or intraepithelial carcinoma,publication_schema
+isic_pad_six_class,1,BCC,BCC,Basal cell carcinoma,publication_schema
+isic_pad_six_class,2,BKL,BKL or SEK,Benign keratosis-like lesion,publication_schema
+isic_pad_six_class,3,MEL,MEL,Melanoma,publication_schema
+isic_pad_six_class,4,NV,NV or NEV,Melanocytic nevus,publication_schema
+isic_pad_six_class,5,SCC,SCC,Squamous cell carcinoma,publication_schema
+dermamnist_archive_six_class,0,AK,AKIEC,Actinic keratosis or intraepithelial carcinoma,archive_schema
+dermamnist_archive_six_class,1,BCC,BCC,Basal cell carcinoma,archive_schema
+dermamnist_archive_six_class,2,BKL,BKL,Benign keratosis-like lesion,archive_schema
+dermamnist_archive_six_class,3,MEL,MEL,Melanoma,archive_schema
+dermamnist_archive_six_class,4,NV,NV,Melanocytic nevus,archive_schema
+dermamnist_archive_six_class,5,VASC,VASC,Vascular lesion,archive_schema

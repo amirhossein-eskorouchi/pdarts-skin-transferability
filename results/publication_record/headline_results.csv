@@ -1,0 +1,11 @@
+result_id,task,source_dataset,target_dataset,method,search_depth_n,evaluation_depth_m,resolution,metric,aggregation,value_percent,std_percent,publication_location,provenance_status,notes
+HR-001,multiclass,ISIC-2019,PAD-UFES-20,P-DARTS6,6,4,32,accuracy,mean_across_three_architectures,62.32,1.20,"Table 5; Table 7; Table 10",manuscript_reported_not_regenerated,Best reported mean PAD-UFES-20 multiclass accuracy in primary 32x32 depth comparison
+HR-002,multiclass,ISIC-2019,PAD-UFES-20,P-DARTS6,6,4,32,accuracy,best_individual_run,63.70,,"Abstract; Section 5.1; Table 17",manuscript_reported_not_regenerated,Headline best individual PAD-UFES-20 multiclass accuracy
+HR-003,multiclass,ISIC-2019,ISIC-2019,P-DARTS6,6,10,32,accuracy,mean_across_three_architectures,75.08,0.58,Table 5,manuscript_reported_not_regenerated,Best reported mean ISIC-2019 accuracy for P-DARTS6
+HR-004,multiclass,ISIC-2019,ISIC-2019,P-DARTS6,6,10,32,accuracy,best_individual_run,75.56,,Section 5.1,manuscript_reported_not_regenerated,Best reported individual ISIC-2019 multiclass accuracy
+HR-005,binary,ISIC-2019,PAD-UFES-20,P-DARTS6,6,4,32,accuracy,best_individual_run,97.71,,"Abstract; Section 5.5; Table 17",manuscript_reported_not_regenerated,Headline malignant-versus-benign result
+HR-006,binary,ISIC-2019,ISIC-2019,P-DARTS6,6,10,32,accuracy,best_individual_run,82.27,,Section 5.5,manuscript_reported_not_regenerated,Best reported individual ISIC-2019 binary accuracy
+HR-007,multiclass,ISIC-2019,DermaMNIST,P-DARTS6,6,4,32,accuracy,mean_across_repeated_runs,71.58,0.29,Table 10,manuscript_reported_not_regenerated,Best mean DermaMNIST transferred accuracy at 32x32
+HR-008,multiclass,ISIC-2019,DermaMNIST,P-DARTS6,6,10,224,accuracy,mean_across_available_runs,79.48,1.34,Table 11,manuscript_reported_not_regenerated,Best mean DermaMNIST transferred accuracy at 224x224
+HR-009,multiclass,DermaMNIST,DermaMNIST,P-DARTS6,6,12,32,accuracy,mean_across_repeated_runs,72.21,1.69,Table 12,manuscript_reported_not_regenerated,Best mean direct DermaMNIST search-control accuracy
+HR-010,multiclass,ISIC-2019,PAD-UFES-20,P-DARTS6,6,8,224,accuracy,mean_across_available_runs,69.06,3.07,Table 11,manuscript_reported_not_regenerated,Highest PAD-UFES-20 mean at 224x224 with nonzero reported standard deviation
