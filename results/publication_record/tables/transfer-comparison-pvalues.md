@@ -1,0 +1,18 @@
+# Transfer-comparison p-values
+
+_Generated from `results/publication_record/transfer_comparison_pvalues.csv`. Do not edit manually._
+
+| target_dataset | evaluation_depth_m | comparison | test | p_value | publication_location |
+| --- | --- | --- | --- | --- | --- |
+| PAD-UFES-20 | 4 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.076 | Table 15 |
+| PAD-UFES-20 | 6 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.302 | Table 15 |
+| PAD-UFES-20 | 8 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.713 | Table 15 |
+| PAD-UFES-20 | 10 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.605 | Table 15 |
+| PAD-UFES-20 | 12 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.768 | Table 15 |
+| PAD-UFES-20 | 14 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.854 | Table 15 |
+| DermaMNIST | 4 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.646 | Table 15 |
+| DermaMNIST | 6 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.822 | Table 15 |
+| DermaMNIST | 8 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.867 | Table 15 |
+| DermaMNIST | 10 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.767 | Table 15 |
+| DermaMNIST | 12 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.704 | Table 15 |
+| DermaMNIST | 14 | ISIC-2019-searched vs target-searched accuracy | two_sample_t_test | 0.477 | Table 15 |

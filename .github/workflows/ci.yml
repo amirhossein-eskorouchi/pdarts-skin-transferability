@@ -45,5 +45,11 @@ jobs:
       - name: Validate experiment configurations
         run: python scripts/validate_experiment_configs.py
 
+      - name: Validate publication record
+        run: python scripts/validate_publication_record.py
+
+      - name: Verify generated publication tables
+        run: python scripts/build_publication_tables.py --check
+
       - name: Run standard-library tests
         run: python -m unittest discover -s tests -v
